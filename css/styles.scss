@@ -314,6 +314,7 @@ h5 {
 .pimage {
   width: 100%;
   height: 40%;
+  border-radius: 20px;
 }
 
 .card p {
@@ -438,9 +439,26 @@ h5 {
   .projects {
     height: 150%;
   }
-
+  .abouttext {
+    padding-top: 60px;
+  }
   .box {
     flex: 50%;
+    padding-top: 60px;
+  }
+  .svg-wrapper {
+    position: absolute;
+    height: 10vh;
+    margin: auto;
+    width: 100vw;
+  }
+
+  .svgs {
+    padding-top: 60px;
+  }
+
+  .dog {
+    bottom: 0%;
   }
 }
 
@@ -526,6 +544,7 @@ h5 {
   .headshot {
     left: 22%;
     position: relative;
+    margin-top: 50px;
   }
 
   .abouttext {
@@ -534,7 +553,8 @@ h5 {
   }
 
   .card {
-    width: 60vw;
+    width: 80vw;
+    height: 450px;
   }
 
   .hero-text {
@@ -542,5 +562,19 @@ h5 {
   }
   .projects {
     height: 200%;
+  }
+  h1 {
+    height: 200px;
+  }
+  span.input {
+    width: 250px;
+    height: 250px;
+  }
+  .dog {
+    bottom: -10%;
+  }
+
+  .container {
+    width: 100vw;
   }
 }
