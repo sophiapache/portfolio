@@ -533,7 +533,7 @@ h5 {
   .headshot {
     left: 22%;
     position: relative;
-    margin-top: 50px;
+    // margin-top: 50px;
   }
 
   .abouttext {
@@ -565,5 +565,9 @@ h5 {
 
   .container {
     width: 100vw;
+  }
+
+  .hero {
+    height: 150vh;
   }
 }
