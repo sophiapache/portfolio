@@ -438,7 +438,7 @@ h5 {
   }
 
   .projects {
-    height: 150%;
+    height: 170%;
   }
 
   .abouttext {
@@ -549,6 +549,7 @@ h5 {
   .abouttext {
     font-size: 100%;
     width: 80%;
+    left: 5%;
   }
 
   .card {
@@ -583,6 +584,10 @@ h5 {
 
   .hero {
     height: 150%;
+  }
+
+  .skills {
+    height: 120vh;
   }
 }
 
