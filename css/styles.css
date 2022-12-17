@@ -612,6 +612,7 @@ h5 {
 
   .abouttext {
     padding-top: 60px;
+    font-size: 110%;
   }
 
   .box {
@@ -632,6 +633,9 @@ h5 {
 
   .dog {
     bottom: 0%;
+  }
+  .catcontainer {
+    top: 93%;
   }
 }
 @media screen and (max-width: 600px) {
