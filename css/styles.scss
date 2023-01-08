@@ -139,6 +139,7 @@ nav .nav-list li.btn:hover a {
   font-weight: 900;
   line-height: 1.2;
   margin: 20px 0px 20px;
+  height: 125px;
 }
 
 span {
@@ -228,6 +229,62 @@ span {
 
 .abouttext p {
   margin-bottom: 1em;
+}
+
+.aboutmepic {
+  position: absolute;
+  left: 70%;
+}
+
+.grid2x2 {
+  min-height: 100%;
+  position: absolute;
+  left: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  // max-height: 100px;
+  // max-width: 100px;
+}
+.grid2x2 > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+}
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.picturebox {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+.picturebox1 {
+  background-image: url("https://i.imgur.com/7FnHhCb.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picturebox2 {
+  background-image: url("https://i.imgur.com/7TKLpU3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picturebox3 {
+  background-image: url("https://i.imgur.com/KleMWdd.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picturebox4 {
+  background-image: url("https://i.imgur.com/G9MK3yU.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -572,38 +629,48 @@ h5 {
 
 @media (min-width: 600px) and (max-width: 1215px) {
   .card {
-    width: 25vw;
+    width: 50vw;
   }
 
+  .about {
+    height: 230vh;
+  }
   .abouttext {
-    font-size: 100%;
-    width: 50%;
-    left: 5%;
+    font-size: 120%;
+    width: 60%;
+    left: 25%;
+    position: relative;
   }
 
   .headshot {
-    left: 5%;
-    margin-right: -30px;
-    margin-top: 300px;
+    display: none;
   }
 
   .headshotimg {
     width: 350px;
     height: 350px;
   }
+
   .container .hero-text {
     width: 120%;
   }
+
   .projects {
-    height: 170%;
+    height: 150%;
+    top: 40%;
   }
+
   .abouttext {
     padding-top: 60px;
+    font-size: 110%;
   }
+
   .box {
+    display: flex;
     flex: 50%;
     padding-top: 60px;
   }
+
   .svg-wrapper {
     position: absolute;
     height: 10vh;
@@ -618,11 +685,32 @@ h5 {
   .dog {
     bottom: 0%;
   }
-}
+  .catcontainer {
+    top: 93%;
+  }
 
+  .grid2x2 {
+    left: 13%;
+    min-height: 75%;
+  }
+
+  .skills {
+    top: 40%;
+  }
+  .picturebox {
+    height: 275px;
+  }
+}
 @media screen and (max-width: 600px) {
+  html {
+    scroll-behavior: auto;
+  }
+
   body {
     min-height: 200vh;
+  }
+  .container .hero-text h1 {
+    height: 150px;
   }
 
   nav .hamb {
@@ -663,8 +751,8 @@ h5 {
     top: 90px;
     right: 0;
     bottom: 0;
-    width: 40%;
-    height: 25%;
+    width: 50%;
+    height: 45%;
     background: #954e87;
     z-index: 2;
     padding: 6% 9%;
@@ -691,15 +779,16 @@ h5 {
   }
 
   .headshot {
-    left: 22%;
-    position: relative;
-    // margin-top: 50px;
+    display: none;
   }
-
+  .about {
+    height: 160vh;
+  }
   .abouttext {
     font-size: 100%;
     width: 80%;
     left: 5%;
+    position: relative;
   }
 
   .card {
@@ -710,18 +799,24 @@ h5 {
   .hero-text {
     width: 401px;
   }
+
   .projects {
-    height: 200%;
+    height: 160%;
+    top: 45%;
   }
+
   h1 {
     height: 200px;
   }
+
   span.input {
     width: 250px;
     height: 250px;
   }
+
   .dog {
     bottom: -10%;
+    left: 0%;
   }
 
   .container {
@@ -729,6 +824,21 @@ h5 {
   }
 
   .hero {
-    height: 150vh;
+    height: 150%;
+  }
+
+  .skills {
+    height: 120vh;
+    top: 45%;
+  }
+
+  .catcontainer {
+    top: 106%;
+    left: 70%;
+  }
+
+  .grid2x2 {
+    left: 0%;
+    min-height: 65%;
   }
 }

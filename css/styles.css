@@ -11,10 +11,6 @@ body {
   min-height: 110vh;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .main-width {
   width: 1280px;
   max-width: 95%;
@@ -142,6 +138,7 @@ nav .nav-list li.btn:hover a {
   font-weight: 900;
   line-height: 1.2;
   margin: 20px 0px 20px;
+  height: 125px;
 }
 
 span {
@@ -221,12 +218,70 @@ span {
 .abouttext {
   width: 40vw;
   position: absolute;
-  left: 30%;
+  left: 10%;
   font-size: 120%;
   text-align: left;
 }
+
 .abouttext p {
   margin-bottom: 1em;
+}
+
+.aboutmepic {
+  position: absolute;
+  left: 70%;
+}
+
+.grid2x2 {
+  min-height: 100%;
+  position: absolute;
+  left: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.grid2x2 > div {
+  display: flex;
+  flex-basis: calc(50% - 40px);
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid2x2 > div > div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.picturebox {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.picturebox1 {
+  background-image: url("https://i.imgur.com/7FnHhCb.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picturebox2 {
+  background-image: url("https://i.imgur.com/7TKLpU3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picturebox3 {
+  background-image: url("https://i.imgur.com/KleMWdd.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.picturebox4 {
+  background-image: url("https://i.imgur.com/G9MK3yU.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -409,6 +464,7 @@ h5 {
   line-height: 100px;
   height: 200px;
 }
+
 .catcontainer {
   height: 200px;
   width: 350px;
@@ -581,19 +637,21 @@ h5 {
 }
 @media (min-width: 600px) and (max-width: 1215px) {
   .card {
-    width: 25vw;
+    width: 50vw;
+  }
+
+  .about {
+    height: 230vh;
   }
 
   .abouttext {
     font-size: 120%;
-    width: 50%;
-    left: 30%;
+    width: 60%;
+    left: 25%;
+    position: relative;
   }
 
   .headshot {
-    /* left: 5%;
-    margin-right: -30px;
-    margin-top: 300px; */
     display: none;
   }
 
@@ -607,7 +665,8 @@ h5 {
   }
 
   .projects {
-    height: 170%;
+    height: 150%;
+    top: 40%;
   }
 
   .abouttext {
@@ -616,6 +675,7 @@ h5 {
   }
 
   .box {
+    display: flex;
     flex: 50%;
     padding-top: 60px;
   }
@@ -634,8 +694,22 @@ h5 {
   .dog {
     bottom: 0%;
   }
+
   .catcontainer {
     top: 93%;
+  }
+
+  .grid2x2 {
+    left: 13%;
+    min-height: 75%;
+  }
+
+  .skills {
+    top: 40%;
+  }
+
+  .picturebox {
+    height: 275px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -645,6 +719,10 @@ h5 {
 
   body {
     min-height: 200vh;
+  }
+
+  .container .hero-text h1 {
+    height: 150px;
   }
 
   nav .hamb {
@@ -680,7 +758,7 @@ h5 {
   }
 
   nav ul.nav-list {
-    display: initial;
+    display: inherit;
     position: absolute;
     top: 90px;
     right: 0;
@@ -713,16 +791,18 @@ h5 {
   }
 
   .headshot {
-    /* left: 22%;
-    position: relative;
-    margin-top: 50px; */
     display: none;
+  }
+
+  .about {
+    height: 160vh;
   }
 
   .abouttext {
     font-size: 100%;
     width: 80%;
     left: 5%;
+    position: relative;
   }
 
   .card {
@@ -735,7 +815,8 @@ h5 {
   }
 
   .projects {
-    height: 250%;
+    height: 160%;
+    top: 45%;
   }
 
   h1 {
@@ -762,11 +843,17 @@ h5 {
 
   .skills {
     height: 120vh;
+    top: 45%;
   }
 
   .catcontainer {
     top: 106%;
     left: 70%;
+  }
+
+  .grid2x2 {
+    left: 0%;
+    min-height: 65%;
   }
 }
 
